@@ -1,11 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Assignment 3</title>
+    <!-- google font cdn -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet">
+    <!-- daisyui cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- icon -->
+    <script src="https://kit.fontawesome.com/029e1f4d6e.js" crossorigin="anonymous"></script>
+
+    <style>
+        .font-sora {
+            font-family: "Sora", serif;
+        }
+    </style>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                        "primary": '#179800',
+
+                    }
+                }
+            }
+        }
+    </script>
+
+
 </head>
-<body>
-    
+
+<body class="font-sora">
+    <!-- header section -->
+    <header>
+        <nav class="md:container mx-auto border-b-2 border-green-500 md:border-none ">
+            <div class="navbar bg-base-100">
+                <div class="navbar-start ">
+
+                    <img class="max-sm:hidden" src="c2-assets/logo-header.png" alt="">
+                    <img class="md:hidden text-center justify-start" src="c2-assets/logo-footer.png" alt="">
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                    <ul class="menu menu-horizontal px-1">
+                        <li><a>Product</a></li>
+                        <li><a>Services</a></li>
+                        <li><a>Contact us</a></li>
+                    </ul>
+                </div>
+
+                <div class="navbar-end text-center  ">
+                     <div>
+                        <i class="fa-solid fa-bars md:hidden text-2xl text-green-500"></i>
+
+                     </div>
+                    <div class="space-x-2 max-sm:hidden">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        <a class="btn btn-outline btn-success">Login</a>
+                        <a class="btn btn-success text-white">Register</a>
+                    </div>
+
+
+                </div>
+            </div>
+        </nav>
+        <!-- banner part -->
+        <section class="bg-gradient-to-b from-white to-orange-50 justify-center text-center mb-12 mt-10">
+            <!-- content -->
+            <div>
+                <h1 class="text-4xl md:5xl font-medium mb-5">Freshness <span class="text-green-500">You <span
+                            class="text-green-500">Can </span> <br>
+                        <span class="text-green-500">Count</span> On, Prices You’ll Love!</h1>
+                <p>
+                    Shop your daily essentials at unbeatable prices. From fresh produce to pantry <br> staples, we’ve
+                    got you covered every day!
+                </p>
+
+            </div>
+            <!-- image -->
+            <div>
+                <img class="w-150 h-200" src="c2-assets/hero-vegetables.png" alt="">
+            </div>
+
+        </section>
+
+    </header>
+    <!-- main section -->
+    <main>
+
+    </main>
+    <!-- footer section -->
+    <footer>
+
+    </footer>
+
 </body>
+
 </html>
